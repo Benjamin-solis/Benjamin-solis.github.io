@@ -74,6 +74,12 @@ button:hover {
     background-color: #feb47b;
 }
 
+ul {
+    list-style-position: inside;
+    text-align: left;
+    display: inline-block;
+}
+
 
 .mensajeOculto {
     display: none;
