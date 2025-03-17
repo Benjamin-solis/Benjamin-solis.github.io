@@ -7,16 +7,21 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <h1>Mi página personal</h1>
-    <ul>
+    <h1 class="centrar-h1">Mi página personal</h1>
+
+    <div>
         <h4>About me</h4>
-        <li>Name: Benjamin Alonso Solis Duran</li>
-        <li>Age: 22</li>
+        <ul>
+            <li>Name: Benjamin Alonso Solis Duran</li>
+            <li>Age: 22</li>
+        </ul>
 
         <h4>Education</h4>
-        <li>University: Universidad de los Andes</li>
-        <li>Major: Computer Science</li>
-        <li>Year of university: 2022</li>
+        <ul>
+            <li>University: Universidad de los Andes</li>
+            <li>Major: Computer Science</li>
+            <li>Year of university: 2022</li>
+        </ul>
 
         <h4>Skills</h4>
         <table>
@@ -29,7 +34,7 @@
                 <td>Basic</td>
             </tr>
             <tr>
-                <td>Javascript</td>
+                <td>JavaScript</td>
                 <td>Basic</td>
             </tr>
             <tr>
@@ -39,23 +44,19 @@
         </table>
 
         <h4>Contact</h4>
-        <li>Mail: Basolis@miuandes.cl</li>
-        <li> <a href="https://github.com/Benjamin-solis"> Link GitHub</a></li>
-        <li> <a href="https://www.linkedin.com/in/benjamin-alonso-solis-duran-b5a908271/"> Link LinkedIn</a></li>
+        <ul>
+            <li>Mail: Basolis@miuandes.cl</li>
+            <li><a href="https://github.com/Benjamin-solis">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/benjamin-alonso-solis-duran-b5a908271/">LinkedIn</a></li>
+        </ul>
 
         <h4>If you want to contact me, write me down here</h4>
         <input type="text" id="mensajeInput" placeholder="write here">
         <button onclick="mostrarMensaje()">Enviar</button>
 
-        
-        <p id="mensajeConfirmacion" class="mensajeOculto">message sent</p> 
-    </ul>
+        <p id="mensajeConfirmacion" class="mensajeOculto">Message sent</p>
+    </div>
 
-    
     <script src="script.js"></script>
-
-    
 </body>
 </html>
-
-
