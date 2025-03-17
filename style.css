@@ -1,9 +1,12 @@
+
 body {
     background-color: #f5e1c8;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
+
 
 header {
     background: linear-gradient(to right, #ff7e5f, #feb47b);
@@ -11,38 +14,25 @@ header {
     color: rgb(17, 16, 16);
     font-size: 24px;
     font-weight: bold;
-    text-align: center;
 }
+
 
 .container {
     width: 90%;
-    max-width: 1200px;
-    margin: 40px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
-.profile-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
 
 .foto-personal {
+    display: block;
+    margin: 20px auto;
     max-width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.info {
-    text-align: left;
-    width: 100%;
-    padding: 20px;
-}
 
 table {
     width: 100%;
@@ -60,6 +50,7 @@ th {
     background-color: #ff7e5f;
     color: white;
 }
+
 
 input {
     width: 80%;
@@ -83,32 +74,24 @@ button:hover {
     background-color: #feb47b;
 }
 
+
 .mensajeOculto {
     display: none;
     color: green;
     font-weight: bold;
 }
 
-@media (min-width: 768px) {
+
+@media (max-width: 768px) {
     .container {
-        flex-direction: row; 
-        align-items: flex-start;
-        justify-content: space-between;
+        width: 95%;
     }
 
-    .profile-section {
-        flex-direction: row; 
-        align-items: flex-start;
+    table, th, td {
+        font-size: 14px;
+    }
+
+    input {
         width: 100%;
-    }
-
-    .foto-personal {
-        max-width: 300px; 
-        margin-right: 20px;
-    }
-
-    .info {
-        text-align: left;
-        flex: 1;
     }
 }
