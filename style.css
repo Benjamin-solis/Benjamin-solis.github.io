@@ -1,3 +1,22 @@
+.centrar-h1 {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .mensajeOculto {
     display: none;
     color: red;
