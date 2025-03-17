@@ -1,62 +1,9 @@
-<head>
-    <title>Mi Primera Página</title>
-</head>
-
-<body>
-    <h1>Mi pagina personal</h1>
-<ul>
-    <h4>About me</h4>
-    <li>Name:Benjamin Alonso Solis Duran</li>
-    <li>Age:22</li>
-
-    <h4>Education</h4>
-    <li>University:Universidad de los andes</li>
-    <li>Major:Computer Science</li>
-    <li>Year of university:2022</li>
-
-    <h4>Skills</h4>
-    <table>
-        <tr>
-            <th>Skills</th>
-            <th>level</th>
-        </tr>
-        <tr>
-            <td>Python</td>
-            <td>Basic</td>
-        </tr>
-        <tr>
-            <td>Javascript</td>
-            <td>Basic</td>
-        </tr>
-        <tr>
-            <td>Excel</td>
-            <td>Intermediate</td>
-        </tr>
-    </table>
-    
-
-    <h4>Contact</h4>
-    <li>Mail:Basolis@miuandes.cl</li>
-    <li> <a href="https://github.com/Benjamin-solis"> Link github</a>
-    </li>
-    <li> <a href="https://www.linkedin.com/in/benjamin-alonso-solis-duran-b5a908271/"> Link Linkedin</a>
-    </li>
-   
-  
-</ul>
-
-<form>
-    <label for="mensaje">If you want to contact me, write me down here.:</label><br>
-    <textarea id="mensaje" rows="4" cols="30" placeholder="write here"></textarea><br>
-    <button type="button" onclick="mostrarMensaje()">Send</button>
-</form>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Simple</title>
+    <title>Mi Primera Página</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -86,38 +33,68 @@
             background-color: #0056b3;
         }
 
-        /* Estilo para la sección que cambiará */
-        #resultado::before {
-            content: "Aquí aparecerá tu texto";
-            font-size: 20px;
-            color: gray;
-        }
-
-        /* Cambia el contenido al escribir en el input y presionar el botón */
-        input:valid ~ #resultado::before {
-            content: attr(value);
-            color: black;
+        #resultado {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            display: inline-block;
+            width: 80%;
+            text-align: left;
         }
     </style>
 </head>
+
 <body>
+    <h1>Mi página personal</h1>
 
-    <h2>Escribe algo y presiona el botón</h2>
+    <ul>
+        <h4>About me</h4>
+        <li>Name: Benjamin Alonso Solis Duran</li>
+        <li>Age: 22</li>
 
-    <form>
-        <input type="text" id="entrada" placeholder="Escribe aquí..." required>
-        <button type="submit">Actualizar</button>
+        <h4>Education</h4>
+        <li>University: Universidad de los Andes</li>
+        <li>Major: Computer Science</li>
+        <li>Year of university: 2022</li>
+
+        <h4>Skills</h4>
+        <table>
+            <tr>
+                <th>Skills</th>
+                <th>Level</th>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td>Javascript</td>
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td>Excel</td>
+                <td>Intermediate</td>
+            </tr>
+        </table>
+
+        <h4>Contact</h4>
+        <li>Mail: Basolis@miuandes.cl</li>
+        <li><a href="https://github.com/Benjamin-solis">Link GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/benjamin-alonso-solis-duran-b5a908271/">Link LinkedIn</a></li>
+    </ul>
+
+    <h2>Introduce algo y haz clic en el botón para cambiar la sección</h2>
+
+    <!-- Formulario con input y botón -->
+    <form action="#resultado" method="get">
+        <input type="text" name="inputValue" id="entrada" placeholder="Escribe algo..." required>
+        <button type="submit">Actualizar Sección</button>
     </form>
 
-    <div id="resultado"></div>
+    <!-- Sección donde se mostrará el valor ingresado -->
+    <div id="resultado">
+        <p id="textResult">El valor ingresado aparecerá aquí después de enviar el formulario.</p>
+    </div>
 
 </body>
 </html>
-
-
-<p id="confirmacion" style="display: none; font-weight: bold; color: green;"></p>
-
-
-
-
-</body>
