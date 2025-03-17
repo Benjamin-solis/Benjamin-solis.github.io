@@ -1,58 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Primera Página</title>
+    <script>
+        // Función que muestra el mensaje de confirmación
+        function mostrarMensaje() {
+            // Mostrar el mensaje de confirmación
+            document.getElementById('mensajeConfirmacion').style.display = 'block';
+        }
+    </script>
 </head>
-
 <body>
-    <h1>Mi pagina personal</h1>
-<ul>
-    <h4>About me</h4>
-    <li>Name:Benjamin Alonso Solis Duran</li>
-    <li>Age:22</li>
+    <h1>Mi página personal</h1>
+    <ul>
+        <h4>About me</h4>
+        <li>Name: Benjamin Alonso Solis Duran</li>
+        <li>Age: 22</li>
 
-    <h4>Education</h4>
-    <li>University:Universidad de los andes</li>
-    <li>Major:Computer Science</li>
-    <li>Year of university:2022</li>
+        <h4>Education</h4>
+        <li>University: Universidad de los Andes</li>
+        <li>Major: Computer Science</li>
+        <li>Year of university: 2022</li>
 
-    <h4>Skills</h4>
-    <table>
-        <tr>
-            <th>Skills</th>
-            <th>level</th>
-        </tr>
-        <tr>
-            <td>Python</td>
-            <td>Basic</td>
-        </tr>
-        <tr>
-            <td>Javascript</td>
-            <td>Basic</td>
-        </tr>
-        <tr>
-            <td>Excel</td>
-            <td>Intermediate</td>
-        </tr>
-    </table>
-    
+        <h4>Skills</h4>
+        <table>
+            <tr>
+                <th>Skills</th>
+                <th>Level</th>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td>Javascript</td>
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td>Excel</td>
+                <td>Intermediate</td>
+            </tr>
+        </table>
 
-    <h4>Contact</h4>
-    <li>Mail:Basolis@miuandes.cl</li>
-    <li> <a href="https://github.com/Benjamin-solis"> Link github</a>
-    </li>
-    <li> <a href="https://www.linkedin.com/in/benjamin-alonso-solis-duran-b5a908271/"> Link Linkedin</a>
-    </li>
-   
-    <h4>Send a message</h4>
-    <input type="text" id="mensajeInput" placeholder="Escribe tu mensaje">
-    <button onclick="mostrarMensaje()">Enviar</button>
+        <h4>Contact</h4>
+        <li>Mail: Basolis@miuandes.cl</li>
+        <li> <a href="https://github.com/Benjamin-solis"> Link GitHub</a></li>
+        <li> <a href="https://www.linkedin.com/in/benjamin-alonso-solis-duran-b5a908271/"> Link LinkedIn</a></li>
 
-    <!-- Espacio donde aparecerá el mensaje -->
-    <p id="mensajeConfirmacion" style="display:none; color: green;">Mensaje enviado</p>
+        <!-- Aquí empieza el campo de texto y el botón -->
+        <h4>Send a message</h4>
+        <input type="text" id="mensajeInput" placeholder="Escribe tu mensaje">
+        <button onclick="mostrarMensaje()">Enviar</button>
 
-</ul>
-
-
-
-
-
+        <!-- Espacio donde aparecerá el mensaje -->
+        <p id="mensajeConfirmacion" style="display:none; color: green;">Mensaje enviado</p>
+    </ul>
 </body>
+</html>
