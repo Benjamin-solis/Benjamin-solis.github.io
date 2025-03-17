@@ -1,100 +1,58 @@
-<!DOCTYPE html>
-<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Primera Página</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        input {
-            padding: 8px;
-            margin-top: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            margin-top: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        #resultado {
-            margin-top: 20px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            display: inline-block;
-            width: 80%;
-            text-align: left;
-        }
-    </style>
 </head>
 
 <body>
-    <h1>Mi página personal</h1>
+    <h1>Mi pagina personal</h1>
+<ul>
+    <h4>About me</h4>
+    <li>Name:Benjamin Alonso Solis Duran</li>
+    <li>Age:22</li>
 
-    <ul>
-        <h4>About me</h4>
-        <li>Name: Benjamin Alonso Solis Duran</li>
-        <li>Age: 22</li>
+    <h4>Education</h4>
+    <li>University:Universidad de los andes</li>
+    <li>Major:Computer Science</li>
+    <li>Year of university:2022</li>
 
-        <h4>Education</h4>
-        <li>University: Universidad de los Andes</li>
-        <li>Major: Computer Science</li>
-        <li>Year of university: 2022</li>
+    <h4>Skills</h4>
+    <table>
+        <tr>
+            <th>Skills</th>
+            <th>level</th>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>Basic</td>
+        </tr>
+        <tr>
+            <td>Javascript</td>
+            <td>Basic</td>
+        </tr>
+        <tr>
+            <td>Excel</td>
+            <td>Intermediate</td>
+        </tr>
+    </table>
+    
 
-        <h4>Skills</h4>
-        <table>
-            <tr>
-                <th>Skills</th>
-                <th>Level</th>
-            </tr>
-            <tr>
-                <td>Python</td>
-                <td>Basic</td>
-            </tr>
-            <tr>
-                <td>Javascript</td>
-                <td>Basic</td>
-            </tr>
-            <tr>
-                <td>Excel</td>
-                <td>Intermediate</td>
-            </tr>
-        </table>
+    <h4>Contact</h4>
+    <li>Mail:Basolis@miuandes.cl</li>
+    <li> <a href="https://github.com/Benjamin-solis"> Link github</a>
+    </li>
+    <li> <a href="https://www.linkedin.com/in/benjamin-alonso-solis-duran-b5a908271/"> Link Linkedin</a>
+    </li>
+   
+    <h4>Send a message</h4>
+    <input type="text" id="mensajeInput" placeholder="Escribe tu mensaje">
+    <button onclick="mostrarMensaje()">Enviar</button>
 
-        <h4>Contact</h4>
-        <li>Mail: Basolis@miuandes.cl</li>
-        <li><a href="https://github.com/Benjamin-solis">Link GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/benjamin-alonso-solis-duran-b5a908271/">Link LinkedIn</a></li>
-    </ul>
+    <!-- Espacio donde aparecerá el mensaje -->
+    <p id="mensajeConfirmacion" style="display:none; color: green;">Mensaje enviado</p>
 
-    <h2>Introduce algo y haz clic en el botón para cambiar la sección</h2>
+</ul>
 
-    <!-- Formulario con input y botón -->
-    <form action="#resultado" method="get">
-        <input type="text" name="inputValue" id="entrada" placeholder="Escribe algo..." required>
-        <button type="submit">Actualizar Sección</button>
-    </form>
 
-    <!-- Sección donde se mostrará el valor ingresado -->
-    <div id="resultado">
-        <p id="textResult">El valor ingresado aparecerá aquí después de enviar el formulario.</p>
-    </div>
+
+
 
 </body>
-</html>
