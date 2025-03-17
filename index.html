@@ -51,6 +51,70 @@
     <button type="button" onclick="mostrarMensaje()">Send</button>
 </form>
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Simple</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        input {
+            padding: 8px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilo para la sección que cambiará */
+        #resultado::before {
+            content: "Aquí aparecerá tu texto";
+            font-size: 20px;
+            color: gray;
+        }
+
+        /* Cambia el contenido al escribir en el input y presionar el botón */
+        input:valid ~ #resultado::before {
+            content: attr(value);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Escribe algo y presiona el botón</h2>
+
+    <form>
+        <input type="text" id="entrada" placeholder="Escribe aquí..." required>
+        <button type="submit">Actualizar</button>
+    </form>
+
+    <div id="resultado"></div>
+
+</body>
+</html>
+
+
 <p id="confirmacion" style="display: none; font-weight: bold; color: green;"></p>
 
 
