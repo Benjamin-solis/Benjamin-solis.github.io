@@ -1,44 +1,97 @@
-.centrar-h1 {
-    display: grid;
-    place-items: center;
-    height: 100vh;
-    background: linear-gradient(to right, #ff7e5f, #feb47b); 
-    color: rgb(17, 16, 16);             
-   
-}
-.foto-personal {
-    display: block;               
-    margin: 20px auto;           
-    max-width: 100%;              
-    height: auto;                }
-
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
 
 body {
-    background-color: #f5e1c8; 
-    font-family: Arial, sans-serif; 
+    background-color: #f5e1c8;
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 
+header {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    padding: 20px;
+    color: rgb(17, 16, 16);
+    font-size: 24px;
+    font-weight: bold;
+}
 
 
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
 
 
+.foto-personal {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
 
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
 
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
 
+th {
+    background-color: #ff7e5f;
+    color: white;
+}
 
+/* Input and Button */
+input {
+    width: 80%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
+button {
+    background-color: #ff7e5f;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
+button:hover {
+    background-color: #feb47b;
+}
 
 
 .mensajeOculto {
     display: none;
-    color: red;
+    color: green;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+
+    input {
+        width: 100%;
+    }
 }
