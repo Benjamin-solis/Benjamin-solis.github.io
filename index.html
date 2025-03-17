@@ -4,13 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Primera Página</title>
-    <script>
-        // Función que muestra el mensaje de confirmación
-        function mostrarMensaje() {
-            // Mostrar el mensaje de confirmación
-            document.getElementById('mensajeConfirmacion').style.display = 'block';
-        }
-    </script>
+    <link rel="stylesheet" href="style.css"> <!-- Enlace al archivo CSS externo -->
 </head>
 <body>
     <h1>Mi página personal</h1>
@@ -49,13 +43,15 @@
         <li> <a href="https://github.com/Benjamin-solis"> Link GitHub</a></li>
         <li> <a href="https://www.linkedin.com/in/benjamin-alonso-solis-duran-b5a908271/"> Link LinkedIn</a></li>
 
-        <!-- Aquí empieza el campo de texto y el botón -->
         <h4>Send a message</h4>
         <input type="text" id="mensajeInput" placeholder="Escribe tu mensaje">
         <button onclick="mostrarMensaje()">Enviar</button>
 
-        <!-- Espacio donde aparecerá el mensaje -->
-        <p id="mensajeConfirmacion" style="display:none; color: green;">Mensaje enviado</p>
+        
+        <p id="mensajeConfirmacion" class="mensajeOculto">Mensaje enviado</p> <!-- Aplicamos la clase de CSS -->
     </ul>
+
+    
+    <script src="script.js"></script>
 </body>
 </html>
