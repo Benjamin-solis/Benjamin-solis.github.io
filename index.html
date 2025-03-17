@@ -13,65 +13,53 @@
     </header>
 
     <main class="container">
-        <img src="images/ben.jpeg" alt="Mi foto" class="foto-personal">
-
-        <section>
-            <h4>About Me</h4>
-            <ul>
-                <li><strong>Name:</strong> Benjamin Alonso Solis Duran</li>
-                <li><strong>Age:</strong> 22</li>
-            </ul>
-        </section>
-
-        <section>
-            <h4>Education</h4>
-            <ul>
-                <li><strong>University:</strong> Universidad de los Andes</li>
-                <li><strong>Major:</strong> Computer Science</li>
-                <li><strong>Year:</strong> 2022</li>
-            </ul>
-        </section>
-
-        <section>
-            <h4>Skills</h4>
-            <table>
-                <tr>
-                    <th>Skill</th>
-                    <th>Level</th>
-                </tr>
-                <tr>
-                    <td>Python</td>
-                    <td>Basic</td>
-                </tr>
-                <tr>
-                    <td>JavaScript</td>
-                    <td>Basic</td>
-                </tr>
-                <tr>
-                    <td>Excel</td>
-                    <td>Intermediate</td>
-                </tr>
-            </table>
-        </section>
-
-        <section>
-            <h4>Contact</h4>
-            <ul>
-                <li><strong>Email:</strong> Basolis@miuandes.cl</li>
-                <li><a href="https://github.com/Benjamin-solis" target="_blank">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/benjamin-alonso-solis-duran-b5a908271/" target="_blank">LinkedIn</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h4>Contact Me</h4>
-            <input type="text" id="mensajeInput" placeholder="Write here">
-            <button onclick="mostrarMensaje()">Enviar</button>
-            <p id="mensajeConfirmacion" class="mensajeOculto">Message sent</p>
-        </section>
+        <div class="profile-section">
+            <img src="images/ben.jpeg" alt="Mi foto" class="foto-personal">
+            <div class="info">
+                <h4>About Me</h4>
+                <ul>
+                    <li><strong>Name:</strong> Benjamin Alonso Solis Duran</li>
+                    <li><strong>Age:</strong> 22</li>
+                </ul>
+    
+                <h4>Education</h4>
+                <ul>
+                    <li><strong>University:</strong> Universidad de los Andes</li>
+                    <li><strong>Major:</strong> Computer Science</li>
+                    <li><strong>Year:</strong> 2022</li>
+                </ul>
+    
+                <h4>Skills</h4>
+                <table>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Level</th>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Basic</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Basic</td>
+                    </tr>
+                    <tr>
+                        <td>Excel</td>
+                        <td>Intermediate</td>
+                    </tr>
+                </table>
+    
+                <h4>Contact</h4>
+                <ul>
+                    <li><strong>Email:</strong> Basolis@miuandes.cl</li>
+                    <li><a href="https://github.com/Benjamin-solis" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/benjamin-alonso-solis-duran-b5a908271/" target="_blank">LinkedIn</a></li>
+                </ul>
+    
+                <h4>Contact Me</h4>
+                <input type="text" id="mensajeInput" placeholder="Write here">
+                <button onclick="mostrarMensaje()">Enviar</button>
+                <p id="mensajeConfirmacion" class="mensajeOculto">Message sent</p>
+            </div>
+        </div>
     </main>
-
-    <script src="script.js"></script>
-
-</body>
-</html>
